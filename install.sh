@@ -14,16 +14,6 @@
 
 #Install docking related files
 cp ./systemfiles/dock.rules /etc/udev/rules.d/
-chmod +x ./systemfiles/rc.local
-cp ./systemfiles/rc.local /etc/
-chmod +x dockLauncher.sh
-cp ./dockLauncher.sh /usr/local/bin/
 chmod +x ./androiddocked.sh
-cp ./androiddocked.sh /usr/local/bin/
-chmod +x ./aoa2hid.py 
-cp ./aoa2hid.py /usr/local/bin/
+chmod +x ./aoa2hid.py
 chmod +x ./aoa2usbaudio.py
-cp ./aoa2usbaudio.py /usr/local/bin/
-#comment the 2 following lines if youre not going to use CAN
-chmod +x ./CANAOA2ctrl.py
-cp CANAOA2ctrl.py /usr/local/bin/
