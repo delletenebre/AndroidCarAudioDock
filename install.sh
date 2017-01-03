@@ -11,7 +11,9 @@
 
 #Install docking related files
 cp ./systemfiles/dock.rules /etc/udev/rules.d/
-chmod +x ./androiddocked.sh
-chmod +x ./routeaudio.sh
+chmod +x ./launcher.sh
+chmod +x ./aoa2_init.sh
+chmod +x ./aoa2enable.py
 chmod +x ./aoa2hid.py
-chmod +x ./aoa2usbaudio.py
+chmod +x ./aoa2write.py
+

@@ -1,0 +1,13 @@
+sudo apt-get install git at
+
+# Install pyusb
+git clone https://github.com/walac/pyusb
+cd pyusb
+sudo python setup.py install
+
+# for 1-wire temperature (DS18B20)
+sudo nano /boot/config.txt
+# add to end
+dtoverlay=w1-gpio
+# then reboot and check
+ls -l /sys/bus/w1/devices
