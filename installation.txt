@@ -1,4 +1,6 @@
-sudo apt-get install git at
+# sudo shutdown -h now
+
+sudo apt-get install git at build-essential python-dev python-smbus python-pip
 
 # Install pyusb
 git clone https://github.com/walac/pyusb
@@ -11,3 +13,7 @@ sudo nano /boot/config.txt
 dtoverlay=w1-gpio
 # then reboot and check
 ls -l /sys/bus/w1/devices
+
+
+## add next line to /etc/rc.local
+/home/pi/AndroidCarAudioDock/setupgpio.sh

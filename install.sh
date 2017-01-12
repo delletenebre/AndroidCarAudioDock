@@ -13,7 +13,10 @@
 cp ./systemfiles/dock.rules /etc/udev/rules.d/
 chmod +x ./launcher.sh
 chmod +x ./aoa2_init.sh
+chmod +x ./aoa2detached.sh
 chmod +x ./aoa2enable.py
 chmod +x ./aoa2hid.py
 chmod +x ./aoa2write.py
 
+chmod +x ./sensor_ds18b20.py
+chmod +x ./setupgpio.sh

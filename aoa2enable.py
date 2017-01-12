@@ -5,6 +5,7 @@ import usb.util
 import struct
 import time
 import sys
+import subprocess
 
 APP = {
     'manufacturer': 'delletenebre',

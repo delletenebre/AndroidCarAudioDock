@@ -70,3 +70,11 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="0930",RUN+="/home/pi/AndroidCarAudioDock/laun
 SUBSYSTEM=="usb", ATTR{idVendor}=="19d2",RUN+="/home/pi/AndroidCarAudioDock/launcher.sh %s{idVendor} %s{idProduct}"
 #Xiaomi
 SUBSYSTEM=="usb", ATTR{idVendor}=="2717",RUN+="/home/pi/AndroidCarAudioDock/launcher.sh %s{idVendor} %s{idProduct}"
+
+# ==== DETACHED ====
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="18d1", ENV{ID_MODEL_ID}=="2d00", RUN+="/home/pi/AndroidCarAudioDock/aoa2detached.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="18d1", ENV{ID_MODEL_ID}=="2d01", RUN+="/home/pi/AndroidCarAudioDock/aoa2detached.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="18d1", ENV{ID_MODEL_ID}=="2d02", RUN+="/home/pi/AndroidCarAudioDock/aoa2detached.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="18d1", ENV{ID_MODEL_ID}=="2d03", RUN+="/home/pi/AndroidCarAudioDock/aoa2detached.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="18d1", ENV{ID_MODEL_ID}=="2d04", RUN+="/home/pi/AndroidCarAudioDock/aoa2detached.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="18d1", ENV{ID_MODEL_ID}=="2d05", RUN+="/home/pi/AndroidCarAudioDock/aoa2detached.sh"

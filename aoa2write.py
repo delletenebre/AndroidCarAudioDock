@@ -9,8 +9,7 @@ def write(data):
     dev = usb.core.find(idVendor=0x18D1)
     if dev is not None:
         dev[0][(0, 0)][1].write(data, 100)
-
-    usb.util.dispose_resources(dev)
+        usb.util.dispose_resources(dev)
 
 
 if __name__ == '__main__':
