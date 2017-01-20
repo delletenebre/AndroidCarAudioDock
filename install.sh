@@ -4,7 +4,7 @@ cp ./systemfiles/dock.rules /etc/udev/rules.d/
 chmod +x ./aoa2detached.sh
 chmod +x ./launcher.sh
 chmod +x ./aoa2initialization.py
-chmod +x ./route_audio.sh
+chmod +x ./aoa2start.sh
 chmod +x ./aoa2write.py
 chmod +x ./aoa2hid.py
 
