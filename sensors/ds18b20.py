@@ -3,6 +3,7 @@
 import glob
 import time
 import os
+from single_process import single_process
 
 
 def read_temp_raw():
@@ -25,13 +26,14 @@ def read_temp():
         return temp_c  # , temp_f
 
 
+@single_process
 def main():
     while True:
         try:
             os.system("/home/pi/AndroidCarAudioDock/aoa2write.py \"<outtemp:%s>\"" % read_temp())
             time.sleep(3)
         except:
-            pass
+            break
 
 
 if __name__ == '__main__':
