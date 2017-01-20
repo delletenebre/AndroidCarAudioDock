@@ -2,7 +2,7 @@
 
 import glob
 import time
-import subprocess
+import os
 from single_process import single_process
 
 
@@ -30,7 +30,7 @@ def read_temp():
 def main():
     while True:
         try:
-            subprocess.call(['/home/pi/AndroidCarAudioDock/aoa2write.py', '<outtemp:%s>' % read_temp()])
+            os.system("/home/pi/AndroidCarAudioDock/aoa2write.py \"<outtemp:%s>\"" % read_temp())
             time.sleep(3)
         except:
             break
